@@ -38,3 +38,7 @@ end
 When("I enter a number of adults or children") do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Then("I should see my number of adults or children") do
+  pending # Write code here that turns the phrase above into concrete actions
+end

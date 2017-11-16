@@ -19,4 +19,60 @@ class Navbar
   BLOG_URL = 'http://www.lastminute.com/blog/'
   MUSIC_TRAVEL_URL = 'http://music.lastminute.com/?lint_type=CMS_MUL&int_campaign=spotifyMMYT&int_detail=Website_Tab_uk&_ga=2.68671825.131409337.1510748561-1745407710.1510748561'
 
+  def hotels_link
+    visit(HOTELS_URL)
+  end
+
+  def city_breaks_link
+    visit(CITY_BREAKS_URL)
+  end
+
+  def flights_link
+    visit(FLIGHTS_URL)
+  end
+
+  def flights_and_hotel_link
+    visit(FLIGHTS_AND_HOTEL_URL)
+  end
+
+  def holidays_link
+    visit(HOLIDAYS_URL)
+  end
+
+  def villas_link
+    visit(VILLAS_URL)
+  end
+
+  def cars_link
+    visit(CARS_URL)
+  end
+
+  def spa_link
+    visit(SPA_URL)
+  end
+
+  def theatre_link
+    visit(THEATRE_URL)
+  end
+
+  def days_out_link
+    visit(DAYS_OUT_URL)
+  end
+
+  def gift_cards_link
+    visit(GIFT_CARDS_URL)
+  end
+
+  def experiences_link
+    visit(EXPERIENCES_URL)
+  end
+
+  def blog_link
+    visit(BLOG_URL)
+  end
+
+  def music_travel_link
+    visit(MUSIC_TRAVEL_URL)
+  end
+
 end
