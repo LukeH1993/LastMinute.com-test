@@ -18,6 +18,28 @@ class Navbar
   EXPERIENCES_URL = 'http://www.lastminute.com/experiences/'
   BLOG_URL = 'http://www.lastminute.com/blog/'
   MUSIC_TRAVEL_URL = 'http://music.lastminute.com/?lint_type=CMS_MUL&int_campaign=spotifyMMYT&int_detail=Website_Tab_uk&_ga=2.68671825.131409337.1510748561-1745407710.1510748561'
+  BLOG_HEADING_XPATH = '//*[@id="layoutContainer"]/div[3]/div/hub-homepage-videos/div[1]/hub-title/h2'
+  MUSIC_TRAVEL_HEADING_XPATH = '//*[@id="root"]/div/div[1]/div[2]/div/div[2]/div[1]/p'
+
+  def heading
+    find("h1").text
+  end
+
+  def cannonball_heading
+    find("cannonball-header main active").text
+  end
+
+  def heading_2
+    find("h2").text
+  end
+
+  def blog_heading
+    find(BLOG_HEADING_XPATH)
+  end
+
+  def music_heading
+    find(MUSIC_TRAVEL_HEADING_XPATH)
+  end
 
   def hotels_link
     visit(HOTELS_URL)

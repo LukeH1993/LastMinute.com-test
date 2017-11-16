@@ -59,7 +59,7 @@ When("I select the hotels link") do
 end
 
 Then("I should be directed to the hotels page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Hotels"
 end
 
 When("I select the city breaks link") do
@@ -67,7 +67,7 @@ When("I select the city breaks link") do
 end
 
 Then("I should be directed to the city breaks page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "City breaks"
 end
 
 When("I select the flights link") do
@@ -75,7 +75,7 @@ When("I select the flights link") do
 end
 
 Then("I should be directed to the flights page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Cheap flights"
 end
 
 When("I select the flights and hotel link") do
@@ -83,7 +83,7 @@ When("I select the flights and hotel link") do
 end
 
 Then("I should be directed to the flights and hotel page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Flight + hotel packages"
 end
 
 When("I select the holidays link") do
@@ -91,7 +91,7 @@ When("I select the holidays link") do
 end
 
 Then("I should be directed to the holidays page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Last minute holidays"
 end
 
 When("I select the villas link") do
@@ -99,7 +99,7 @@ When("I select the villas link") do
 end
 
 Then("I should be directed to the villas page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.cannonball_heading).to eq "Villas, Cottages & Apartments"
 end
 
 When("I select the cars link") do
@@ -107,7 +107,7 @@ When("I select the cars link") do
 end
 
 Then("I should be directed to the cars page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.car_heading).to eq "Search for Car Hire"
 end
 
 When("I select the spa link") do
@@ -115,7 +115,7 @@ When("I select the spa link") do
 end
 
 Then("I should be directed to the spa page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Search for Spa & Beauty Deals"
 end
 
 When("I select the theatre link") do
@@ -123,7 +123,7 @@ When("I select the theatre link") do
 end
 
 Then("I should be directed to the theatre page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Theatre tickets"
 end
 
 When("I select the days out link") do
@@ -131,7 +131,7 @@ When("I select the days out link") do
 end
 
 Then("I should be directed to the days out page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Days out"
 end
 
 When("I select the gift cards link") do
@@ -139,7 +139,7 @@ When("I select the gift cards link") do
 end
 
 Then("I should be directed to the gift cards page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading_2).to eq "Gift card options"
 end
 
 When("I select the experiences link") do
@@ -147,7 +147,7 @@ When("I select the experiences link") do
 end
 
 Then("I should be directed to the experiences page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(@navtest.heading).to eq "Experiences"
 end
 
 When("I select the blog link") do
@@ -155,7 +155,7 @@ When("I select the blog link") do
 end
 
 Then("I should be directed to the blog page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @navtest.blog_heading
 end
 
 When("I select the music travel link") do
@@ -163,5 +163,5 @@ When("I select the music travel link") do
 end
 
 Then("I should be directed to the music travel page") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @navtest.music_heading
 end

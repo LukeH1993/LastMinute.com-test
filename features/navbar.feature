@@ -1,3 +1,4 @@
+@navbar
 Feature: Navbar
 As a user I want to be able to navigate through the navigation bar from the hompage
 
