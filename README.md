@@ -10,14 +10,14 @@ As part of practise work for my SDET training, I started an automation script us
 
 ## Example Test
 
-  Given("I want to access the music travel page from the navigation bar") do
-    @navtest = Navbar.new
-  end
+Given("I want to access the music travel page from the navigation bar") do
+  @navtest = Navbar.new
+end
 
-  When("I select the hotels link") do
-    @navtest.hotels_link
-  end
+When("I select the hotels link") do
+  @navtest.hotels_link
+end
 
-  Then("I should be directed to the hotels page") do
-    expect(@navtest.heading).to eq "Hotels"
-  end
+Then("I should be directed to the hotels page") do
+  expect(@navtest.heading).to eq "Hotels"
+end
